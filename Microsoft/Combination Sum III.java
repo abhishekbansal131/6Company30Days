@@ -13,7 +13,7 @@ class Solution {
         for(int i=start;i<=end;i++){
             helper.add(i);
             combinations(i+1,end,k,target-i,helper,result);                       
-            temp.remove(helper.size()-1);
+            helper.remove(helper.size()-1);
         }
         return;
     }
